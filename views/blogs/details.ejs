@@ -1,5 +1,5 @@
 <html lang="en">
-<%- include("./partials/head.ejs") %>
+<%- include("../partials/head.ejs") %>
 
     <body>
         <%- include("../partials/nav.ejs") %>
@@ -13,7 +13,9 @@
                         <%= blog.body %>
                     </p>
                 </div>
-                <a class="delete" data-doc="<%= blog._id %>">delete</a>
+                <a class="delete" data-doc="<%= blog._id %>">
+                    <img src="/trashcan.svg" alt="delete icon">
+                </a>
             </div>
 
             <%- include("../partials/footer.ejs") %>
